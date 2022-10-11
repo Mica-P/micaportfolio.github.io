@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website - Mica Paulo</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6e4f3da2ae.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I'm <span>Mica Paulo</span></h1>
+                </div>
+            </div>
+        </div>
+        <!-- ABOUT-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user1.jpg" class="">
+                    </div> 
+                    
+                    <div class="about-col-2">
+                       <h1 class="sub-title">About Me</h1>
+                       <p>< h1 > Hello World! < / h1 ></p><br>
+                       <p>I'm Mica Paulo and I am 18 years old girl. I'm aspring Software Developer and next year I will be a first-year student at University of Applied Sciences Leiden. As a child I have always loved computers and video games, due to the influence of my father. So it's no surprise that I will follow in my father's footsteps!</p>
+                       <div class="table-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces | Wireframes, Figma, Adobe XD, Adobe Photoshop</li>
+                            <li><span>Web Development</span><br>Web app Development | HTML, CSS, PHP ,MySQL, UML, Laravel Framework, Symfony Framework, Bootstrap, Java, Javascript</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>FEB 2022 - AUG 2022</span><br>Mcdonalds worker</li>
+                            <li><span>SEP 2021 - JAN 2022</span><br>Studentaanhuis computerhulp IT-student</li>
+                            <li><span>SEP 2021 - FEB 2022</span><br>
+                            Dutch Innovation Factory (stage)</li>
+                            <li><span>APRIL 2018 - MEI 2018</span><br>
+                            Technolab (stage)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>AUG 2020 - NOW</span><br>Mborijnland MBO niveau 4 Software Developer</li>
+                            <li><span>SEP 2016 - AUG 2020</span><br>MAVO / VMBO-TL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------services------------------>
+        <div id="services">
+            <div class="container">
+                <div class="sub-title">My Services</div>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Frontend Development: HTML, CSS, Bootstrap, Javascript</p><br>
+                        <p>Backend Development: PHP, Laravel, Symfony, Java, MySQL</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Adobe Photoshop, Figma, Adobe XD, Wireframes, Graphic Design</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-android"></i>
+                        <h2>App Development</h2>
+                        <p>Currently studying on Android development Kotlin</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------portfolio------------------>
+        <div id="portfolio">
+            <div class="container">
+                <div class="sub-title">My Work</div>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/image1.png">
+                        <div class="layer">
+                            <h3>Food website</h3>
+                            <p>Static website about food</p>
+                            <a href="https://mica-p.github.io/food-website.github.io-/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/image3.jpg">
+                        <div class="layer">
+                            <h3>Website placeholder 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum exercitationem sapiente nostrum. Aliquam corrupti magnam reiciendis dolor deleniti, quae maiores!</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/imag2.jpg">
+                        <div class="layer">
+                            <h3>App placeholder</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum exercitationem sapiente nostrum. Aliquam corrupti magnam reiciendis dolor deleniti, quae maiores!</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!---------------contact------------------>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> micapaulowork@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +31 6 21 31 89 40</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/mica-paulo-215644203/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Mica-P"><i class="fa-brands fa-square-github"></i></a>
+                        </div>
+                        <a href="images/MicaPauloCV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xlevlngg" method="post">
+                              <label for="full-name">Full Name</label>
+                              <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                              <label for="email-address">Email Address</label>
+                              <input type="email" name="_replyto" id="email-address" placeholder="Your Email" required="">
+                              <label for="message">Message</label>
+                              <textarea rows="5" name="message" id="message" required=""></textarea>
+                              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Mica Paulo 2022 <i class="fa-solid fa-heart"></i><p>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
